@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+
+
+	<!-- <cbc:ProfileID schemeName="Tipo de Operacion" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51">0101</cbc:ProfileID> -->
+	<!-- <cbc:DueDate>2019-04-16</cbc:DueDate> -->
+	<!-- <cbc:Note languageLocaleID="1000">SON UN MIL CIENTO OCHENTA</cbc:Note> -->
+    <!-- <cbc:LineCountNumeric>1</cbc:LineCountNumeric> -->
+
+
+	<!-- Datos de la Boleta de Venta -->
+		<!-- 1	Versión del UBL -->
+		<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+
+		<!-- 2	Versión de la estructura del documento -->
+		<cbc:CustomizationID schemeAgencyName="PE:SUNAT">2.0</cbc:CustomizationID>
+
+		<!-- 3	Numeración, conformada por serie y número correlativo -->
+		<cbc:ID>B001-000002</cbc:ID>
+
+		<!-- 4	Fecha de emisión -->
+		<cbc:IssueDate>2019-04-16</cbc:IssueDate>
+
+		<!-- 5	Hora de emisión -->
+		<cbc:IssueTime>00:00:00</cbc:IssueTime>
+
+		<!-- 6	Tipo de documento -->
+		<cbc:InvoiceTypeCode listAgencyName="PE:SUNAT" listName="Tipo de Documento" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01" listID="0101" name="Tipo de Operacion" listSchemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo51">03</cbc:InvoiceTypeCode>
+
+		<!-- 7	Tipo de moneda -->
+		<cbc:DocumentCurrencyCode listID="ISO 4217 Alpha" listName="Currency" listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>
+	<!-- Datos de la Boleta de Venta -->
+
+
+	<!-- Datos de la Firma electrónica -->
+		<ext:UBLExtensions>
+			<ext:UBLExtension>
+				<ext:ExtensionContent>
+					<!-- FIRMA GENERADA -->
+				</ext:ExtensionContent>
+			</ext:UBLExtension>
+		</ext:UBLExtensions>
+
+	    <cac:Signature>
+			<cbc:ID>20601560004</cbc:ID>
+
+			<cac:SignatoryParty>
+				<cac:PartyIdentification>
+					<cbc:ID>20601560004</cbc:ID>
+				</cac:PartyIdentification>
+
+				<cac:PartyName>
+					<cbc:Name>GAMING NETWORK E.I.R.L.</cbc:Name>
+				</cac:PartyName>
+			</cac:SignatoryParty>
+
+			<cac:DigitalSignatureAttachment>
+				<cac:ExternalReference>
+					<cbc:URI>20601560004</cbc:URI>
+				</cac:ExternalReference>
+			</cac:DigitalSignatureAttachment>
+		</cac:Signature>
+	<!-- Datos de la Firma electrónica -->
+
+
+	<!-- Datos del Emisor -->
+		<cac:AccountingSupplierParty>
+			<cac:Party>
+				<cac:PartyIdentification>
+					<!-- 9	Número de RUC -->
+					<cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20601560004</cbc:ID>
+				</cac:PartyIdentification>
+
+				<cac:PartyName>
+					<!-- 10	Nombre Comercial -->
+					<cbc:Name><![CDATA[-]]></cbc:Name>
+				</cac:PartyName>
+
+				<cac:PartyLegalEntity>
+					<!-- 11	Apellidos y nombres, denominación o razón social -->
+					<cbc:RegistrationName><![CDATA[GAMING NETWORK E.I.R.L.]]></cbc:RegistrationName>
+
+					<!-- 12	Domicilio Fiscal -->
+					<cac:RegistrationAddress>
+						<cac:AddressLine>
+							<cbc:Line><![CDATA[JR. JUNIN NRO. 134 DPTO. 102A URB. URBEA LIMA - LIMA - MAGDALENA DEL MAR]]></cbc:Line>
+						</cac:AddressLine>
+						<cbc:CitySubdivisionName><![CDATA[URBEA]]></cbc:CitySubdivisionName>
+						<cbc:CityName><![CDATA[LIMA]]></cbc:CityName>
+						<cbc:ID schemeAgencyName="PE:INEI" schemeName="Ubigeos">150120</cbc:ID><!-- (Código de ubigeo) (Catálogo No. 13) -->
+						<cbc:CountrySubentity><![CDATA[LIMA]]></cbc:CountrySubentity>
+						<cbc:District><![CDATA[MAGDALENA DEL MAR]]></cbc:District>
+
+						<!-- 14	Pais del uso, explotación o aprovechamiento del servicio. - Código de país -->
+						<cac:Country>
+							<cbc:IdentificationCode listID="ISO 3166-1" listAgencyName="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+						</cac:Country>
+
+						<!-- 15	Código asignado por SUNAT para el establecimiento anexo declarado en el RUC. De informar un código distinto a 0000, se verifi cará que corresponda al código del establecimiento anexo que SUNAT tiene registrado en sus sistemas. El citado código puede ser revisado en la opción consulta de RUC de SUNAT Virtual. -->
+						<!-- <cbc:AddressTypeCode listAgencyName="PE:SUNAT" listName="Establecimientos anexos">0000</cbc:AddressTypeCode> -->
+					</cac:RegistrationAddress>
+				</cac:PartyLegalEntity>
+
+				<!-- <cac:PartyTaxScheme>
+					<cbc:RegistrationName><![CDATA[ALEX S.A.]]></cbc:RegistrationName>
+
+					<cbc:CompanyID schemeID="6" schemeName="SUNAT:Identificador de Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20601560004</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID schemeID="6" schemeName="SUNAT:Identificador de Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20601560004</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme>
+				<cac:Contact>
+					<cbc:Name><![CDATA[]]></cbc:Name>
+				</cac:Contact> -->
+			</cac:Party>
+		</cac:AccountingSupplierParty>
+	<!-- Datos del Emisor -->
+
+
+	<!-- Datos del cliente o receptor -->
+		<cac:AccountingCustomerParty>
+			<cac:Party>
+				<!-- 16	Tipo y Número de documento de identidad del adquirente o usuario -->
+				<cac:PartyIdentification>
+					<cbc:ID schemeID="1" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">44469121</cbc:ID>
+				</cac:PartyIdentification>
+
+				<cac:PartyLegalEntity>
+					<!-- 17	Apellidos y nombres, denominación o razón social del adquirente o usuario -->
+					<cbc:RegistrationName><![CDATA[Oscar Gamboa]]></cbc:RegistrationName>
+
+					<!-- 18	Dirección del adquiriente o usuario -->
+					<!-- <<< SIN VALIDACIÓN >>> -->
+					<cac:RegistrationAddress>
+						<cac:AddressLine>
+							<cbc:Line><![CDATA[Jiron Junin 134, Apartament 102A]]></cbc:Line>
+						</cac:AddressLine>
+						<cbc:CitySubdivisionName><![CDATA[URBEA]]></cbc:CitySubdivisionName>
+						<cbc:CityName><![CDATA[]]></cbc:CityName>
+						<cbc:ID schemeName="Ubigeos" schemeAgencyName="PE:INEI"/><!-- (Código de ubigeo) (Catálogo No. 13) -->
+						<cbc:CountrySubentity><![CDATA[]]></cbc:CountrySubentity>
+						<cbc:District><![CDATA[]]></cbc:District>                                      
+						<cac:Country>
+							<cbc:IdentificationCode listID="ISO 3166-1" listAgencyName="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:RegistrationAddress>
+				</cac:PartyLegalEntity>
+
+				<!-- <cac:PartyName>
+					<cbc:Name><![CDATA[Oscar Gamboa]]></cbc:Name>
+				</cac:PartyName>
+				<cac:PartyTaxScheme>
+					<cbc:RegistrationName><![CDATA[Oscar Gamboa]]></cbc:RegistrationName>
+					<cbc:CompanyID schemeID="1" schemeName="SUNAT:Identificador de Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">44469121</cbc:CompanyID>
+					<cac:TaxScheme>
+						<cbc:ID schemeID="1" schemeName="SUNAT:Identificador de Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">44469121</cbc:ID>
+					</cac:TaxScheme>
+				</cac:PartyTaxScheme> -->
+			</cac:Party>
+		</cac:AccountingCustomerParty>
+	<!-- Datos del cliente o receptor -->
+
+
+	<!-- Datos del detalle o Ítem de la Boleta de Venta -->
+		<cac:InvoiceLine>
+			<!-- 22 Número de orden del Ítem -->
+			<cbc:ID>1</cbc:ID>
+
+			<!-- 23 Unidad de medida por ítem -->
+			<!-- 24	Cantidad de unidades por ítem -->
+			<cbc:InvoicedQuantity unitCode="NIU" unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe">1</cbc:InvoicedQuantity>
+
+
+			<cac:Item>
+				<!-- 25 Código de producto -->
+				<cac:SellersItemIdentification>
+					<cbc:ID><![CDATA[DCHOOK]]></cbc:ID>
+				</cac:SellersItemIdentification>
+
+				<!-- 26 Código producto de SUNAT (Catálogo No. 25) -->
+				<cac:CommodityClassification>
+					<cbc:ItemClassificationCode listID="UNSPSC" listAgencyName="GS1 US" listName="Item Classification">80141601</cbc:ItemClassificationCode>
+				</cac:CommodityClassification>
+
+				<!-- 28 Descripción detallada del servicio prestado, bien vendido o cedido en uso, indicando las características. -->
+				<cbc:Description><![CDATA[Dragonclaw Hook]]></cbc:Description>
+
+			</cac:Item>
+
+			<!-- 29 Valor unitario por ítem -->
+			<cac:Price>
+				<cbc:PriceAmount currencyID="PEN">1000</cbc:PriceAmount>
+			</cac:Price>
+
+			<!-- 30 Precio de venta unitario por item -->
+			<cac:PricingReference>
+				<cac:AlternativeConditionPrice>
+					<cbc:PriceAmount currencyID="PEN">1180</cbc:PriceAmount>
+					<cbc:PriceTypeCode listName="Tipo de Precio" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01</cbc:PriceTypeCode>
+				</cac:AlternativeConditionPrice>
+			</cac:PricingReference>
+
+			<cac:TaxTotal>
+				<!-- 32 Monto total de impuestos del ítem -->
+				<cbc:TaxAmount currencyID="PEN">180</cbc:TaxAmount>
+
+				<!-- 33 Afectación al IGV por la línea / Afectación IVAP por la línea -->
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount currencyID="PEN">1000</cbc:TaxableAmount>
+					<cbc:TaxAmount currencyID="PEN">180</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<!-- <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID> -->
+						<cbc:Percent>18.00</cbc:Percent>
+						<cbc:TaxExemptionReasonCode listAgencyName="PE:SUNAT" listName="SUNAT:Codigo de Tipo de Afectación del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10</cbc:TaxExemptionReasonCode>
+
+						<!-- (Catálogo No. 05) -->
+						<cac:TaxScheme>
+							<cbc:ID schemeID="UN/ECE 5153" schemeName="Tax Scheme Identifier" schemeAgencyName="United Nations Economic Commission for Europe">1000</cbc:ID>
+							<cbc:Name>IGV</cbc:Name>
+							<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+
+			<!-- 35 Valor de venta por ítem -->
+			<cbc:LineExtensionAmount currencyID="PEN">1000</cbc:LineExtensionAmount>
+		</cac:InvoiceLine>
+	<!-- Datos del detalle o Ítem de la Boleta de Venta -->
+
+
+	<!-- Totales de la Boleta de venta -->
+		<cac:TaxTotal>
+			<!-- 37 Monto total de impuestos -->
+			<cbc:TaxAmount currencyID="PEN">180</cbc:TaxAmount>
+
+			<cac:TaxSubtotal>
+				<!-- 38 Total Valor de Venta - Exportación -->
+				<!-- 39 Total valor de venta - operaciones inafectas -->
+				<!-- 40 Total valor de venta - operaciones exoneradas -->
+				<cbc:TaxableAmount currencyID="PEN">1000</cbc:TaxableAmount>
+
+				<cbc:TaxAmount currencyID="PEN">180</cbc:TaxAmount>
+
+				<!-- (Catálogo No. 05) -->
+				<cac:TaxCategory>
+					<!-- <cbc:ID schemeID="UN/ECE 5305" schemeName="Tax Category Identifier" schemeAgencyName="United Nations Economic Commission for Europe">S</cbc:ID> -->
+					<cac:TaxScheme>
+						<cbc:ID schemeID="UN/ECE 5153" schemeAgencyID="6">1000</cbc:ID>
+						<cbc:Name>IGV</cbc:Name>
+						<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+
+		<!-- 46 Cargos y Descuentos Globales -->
+		<cac:AllowanceCharge>
+			<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+			<cbc:AllowanceChargeReasonCode listName="Cargo/descuento" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo53">02</cbc:AllowanceChargeReasonCode>
+			<cbc:MultiplierFactorNumeric>0.00</cbc:MultiplierFactorNumeric>
+			<cbc:Amount currencyID="PEN">0.00</cbc:Amount>
+			<cbc:BaseAmount currencyID="PEN">0.00</cbc:BaseAmount>
+		</cac:AllowanceCharge>
+
+		<cac:LegalMonetaryTotal>
+			<!-- 47	Total Descuentos (Que no afectan la base) -->
+			<cbc:AllowanceTotalAmount currencyID="PEN">0</cbc:AllowanceTotalAmount>
+
+			<!-- 48 Total otros Cargos (Que no afectan la base) -->
+			<cbc:ChargeTotalAmount currencyID="PEN">0.00</cbc:ChargeTotalAmount>
+
+			<!-- 49 Importe total -->
+			<cbc:PayableAmount currencyID="PEN">1180</cbc:PayableAmount>
+
+			<!-- 50 Total Valor de Venta -->
+			<cbc:LineExtensionAmount currencyID="PEN">1000</cbc:LineExtensionAmount>
+
+			<!-- 51 Total Precio de Venta -->
+			<cbc:TaxInclusiveAmount currencyID="PEN">1180</cbc:TaxInclusiveAmount>
+		</cac:LegalMonetaryTotal>
+	<!-- Totales de la Boleta de venta -->
+
+
+</Invoice>

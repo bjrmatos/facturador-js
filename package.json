@@ -1,14 +1,17 @@
 {
-  "name": "facturador-js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "node ."
-  },
-  "dependencies": {
-    "express": "^4.16.4",
-    "isomorphic-unfetch": "^3.0.0",
-    "soap": "^0.26.0"
-  }
+    "name": "facturador-js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "dependencies": {
+        "isomorphic-unfetch": "^3.0.0",
+        "jszip": "^3.2.1",
+        "pem": "^1.14.2",
+        "xml-crypto": "^1.3.0",
+        "xmldom": "^0.1.27",
+        "xmldom-fork-fixed": "0.0.1"
+    }
 }
